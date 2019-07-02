@@ -1,5 +1,9 @@
 # Git notes
 
+* [Longpaths](#longpaths)
+* [Stash](#stash)
+
+<a name="longpaths"></a>
 ## Longpaths
 Clone repository enabling long name files support in windows:
 
@@ -7,6 +11,7 @@ Clone repository enabling long name files support in windows:
 git clone -c core.longpaths=true repourl
 ```
 
+<a name="stash"></a>
 ## Stash
 List all stash positions:
 
