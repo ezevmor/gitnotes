@@ -1,22 +1,23 @@
+[![Commitizen friendly](https://img.shields.io/badge/commitizen-friendly-brightgreen.svg)](http://commitizen.github.io/cz-cli/)
+
 # Git notes
 
 * [Longpaths](#longpaths)
 * [Stash](#stash)
 
-## <a name="longpaths"></a> Longpaths
+## Longpaths <a name="longpaths"></a>
 Clone repository enabling long name files support in windows:
 
 ```
 git clone -c core.longpaths=true repourl
 ```
 
-## <a name="stash"></a> Stash
+## Stash <a name="stash"></a>
 List all stash positions:
 
 ```
 git stash list
 ```
-
 
 View the stored change in the "n" stash position:
 
