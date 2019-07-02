@@ -1,7 +1,41 @@
 # Git notes
 
+* [Remotes](#remotes)
+* [Branches](#branches)
 * [Longpaths](#longpaths)
 * [Stash](#stash)
+
+<a name="remotes"></a>
+## Remotes
+Link local repository to a remote one:
+
+```
+git remote add <new_remote_name> https://remoteurl
+```
+
+List configured remotes
+```
+git remote -v
+```
+
+<a name="branches"></a>
+## Branches
+Create new branch:
+
+```
+git branch <branch_name>
+```
+
+Delete branch:
+```
+git push --delete <remote_name> <branch_name> // delete the remote branch
+git branch -d <branch_name> // delete the local branch
+```
+
+List configured remotes
+```
+git remote -v
+```
 
 <a name="longpaths"></a>
 ## Longpaths
