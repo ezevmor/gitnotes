@@ -1,9 +1,8 @@
-[![Commitizen friendly](https://img.shields.io/badge/commitizen-friendly-brightgreen.svg)](http://commitizen.github.io/cz-cli/)
-
 # Git notes
 
-* [Longpaths](#longpaths)
-* [Stash](#stash)
+[Longpaths](#longpaths)
+
+[Stash](#stash)
 
 ## Longpaths <a name="longpaths"></a>
 Clone repository enabling long name files support in windows:
