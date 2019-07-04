@@ -122,7 +122,8 @@ git stash drop stash@{n}
 ## Undo local changes
 Delete all in working copy:
 ```
-git reset --hard
+git reset --hard // delete changes in tracked files
+git clean -fd // delete non tracked new folders and files
 ```
 
 Undo last commit:
@@ -174,3 +175,6 @@ View git activity:
 ```
 git reflog
 ```
+
+
+intentare hacer este cambio
