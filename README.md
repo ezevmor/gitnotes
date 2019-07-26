@@ -11,6 +11,7 @@
 * [Merge branches](#merge)
 * [Conflicts](#conflicts)
 * [Logs](#logs)
+* [Rebase](#rebase)
 
 <a name="remotes"></a>
 ## Remotes
@@ -49,6 +50,37 @@ git clone -c core.longpaths=true repourl
 Commit changes:
 ```
 git commit -am "any description"
+```
+
+Rename the last commit name:
+```
+git commit --amend
+// this command opens vim editor with the commit name in it
+// we neet to press 'i' key to enter edit mode
+// do the change
+// press 'esc' to exit edit mode
+// finally write: ':x' to save and exit
+// if the commit has been pushed to the remote repository we need to do: 
+// 'git push --force' (to push the change)
+```
+
+Rename certain commit name:
+```
+git rebase -i <commit_id> // <commit_id> is the commit before we want to change
+// or 'git rebase -i HEAD~<n>' where <n> is the number of commits from the last
+// that you want to see.
+// This command opens vim editor with a list of commits in it; something like this:
+// pick <commit_id1> commit name 1
+// pick <commit_id2> commit name 2
+// and information about the available commands.
+// press 'i' key to enter edit mode
+// change 'pick' word to 'reword' or 'r' in the line of whe commit that you want to change the name
+// press 'esc' key to exit edit mode
+// write: ':x' to save and exit
+// now the vim editor will open with the commit name that you want to change in it
+// do the change, save and exit
+// if this commit has been pushed we need to do:
+// 'git push --force' to push the change
 ```
 
 <a name="update"></a>
@@ -175,6 +207,3 @@ View git activity:
 ```
 git reflog
 ```
-
-
-intentare hacer este cambio
