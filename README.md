@@ -11,7 +11,6 @@
 * [Merge branches](#merge)
 * [Conflicts](#conflicts)
 * [Logs](#logs)
-* [Rebase](#rebase)
 
 <a name="remotes"></a>
 ## Remotes
