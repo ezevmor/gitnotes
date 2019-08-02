@@ -150,7 +150,7 @@ git stash drop stash@{n}
 ```
 
 <a name="undo"></a>
-## Undo local changes
+## Undo changes
 Delete all in working copy:
 ```
 git reset --hard // delete changes in tracked files
