@@ -163,6 +163,12 @@ git reset HEAD~1 // undo last commit mantaining commit changes in working copy
 git reset --hard HEAD~1 // undo last commit and delete commit changes
 ```
 
+Undo last pushed commit:
+```
+// first undo last local commit, then do:
+git push -f
+```
+
 Back to a commit:
 ```
 git reset --hard <commit_id>
