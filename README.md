@@ -19,9 +19,17 @@ Link local repository to a remote one:
 git remote add <new_remote_name> https://remoteurl
 ```
 
-List configured remotes
+List configured remotes:
 ```
 git remote -v
+```
+
+Link with an unrelated remote repository:
+```
+git remote add <new_remote_name> https://remoteurl
+git fetch
+git pull --allow-unrelated-histories // resolve conflicts and commit the changes
+git push
 ```
 
 <a name="branches"></a>
