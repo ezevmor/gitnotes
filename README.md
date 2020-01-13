@@ -129,6 +129,10 @@ git add *
 git stash save "any description"
 ```
 
+```
+git stash push -m "any description" <file path>
+```
+
 Recover stored changes:
 ```
 git stash pop //recover the last changes stored
