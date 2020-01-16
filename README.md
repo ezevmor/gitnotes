@@ -161,6 +161,12 @@ Delete changes stored in the "n" stash position:
 git stash drop stash@{n}
 ```
 
+Recover deleted stash
+```
+git fsck --unreachable | grep commit | cut -d ' ' -f3 | xargs git log --merges --no-walk
+git update-ref refs/stash commitId -m "new name"
+```
+
 <a name="undo"></a>
 ## Undo changes
 Delete all in working copy:
